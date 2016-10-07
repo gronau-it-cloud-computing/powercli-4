@@ -3,10 +3,6 @@ $ESXHosts = "host1,host2"
 Connect-VIServer vcenter.something.com
 
 $ESXHosts | Foreach {
- 
- 
-  
-
    
    Write-Host "Finding disks for $($_)"
    # Find the blank SSDs for the current host
