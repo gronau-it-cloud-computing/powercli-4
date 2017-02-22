@@ -59,4 +59,4 @@ write-host "creating diskgroup " $diskgroup " on " $_.vmhost
  }#foreachHBA
  
  
- 
+ }#foreachhost
