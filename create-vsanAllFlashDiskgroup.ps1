@@ -13,7 +13,7 @@ if ( !(Get-Module -Name VMware.VimAutomation.Core -ErrorAction SilentlyContinue)
 }
 
 if (!(Get-Module -Name vmware.VimAutomation.storage -ErrorAction SilentlyContinue)){
-	Import-Module vmware.VimAutomation.Sdk
+	Import-Module vmware.VimAutomation.Storage
 }
 
 $ESXHosts = @("host1","host2")
