@@ -221,7 +221,7 @@ $user = "username"
 #note single quotes seem to work best below
 $password = 'mypass'
 $primarySRMServerAddr="primarysrmserver"
-$secondarySRMServerAddr="primarysrmserver"
+$secondarySRMServerAddr="secondarysrmserver"
 
 login-srmserverapi   -srmserveraddr $primarySRMServerAddr -user $user -password $password -remoteuser $user -remotepassword $password
 
