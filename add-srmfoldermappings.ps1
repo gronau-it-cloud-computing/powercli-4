@@ -120,8 +120,8 @@ function add-recursivefoldermapping () {
 	$primaryfolder,
 	$secondaryFolder
 	)
-	$primaryFolderArr = $primaryFolder.extensiondata.childentity
-	$secondaryFolderArr = $secondaryFolder.extensiondata.childentity
+	$primaryFolderArr = $primaryFolder.extensiondata.childentity | Where-Object { $_.Type -eq "Folder"}
+	$secondaryFolderArr = $secondaryFolder.extensiondata.childentity | Where-Object { $_.Type -eq "Folder"}
 
 
 
@@ -167,8 +167,8 @@ function copy-folderstructuretovc () {
 		$primaryFolder,
 		$SecondaryFolder
 	)
-	$primaryFolderArr = $primaryFolder.extensiondata.childentity
-	$secondaryFolderArr = $secondaryFolder.extensiondata.childentity
+	$primaryFolderArr = $primaryFolder.extensiondata.childentity | Where-Object { $_.Type -eq "Folder"}
+	$secondaryFolderArr = $secondaryFolder.extensiondata.childentity | Where-Object { $_.Type -eq "Folder"}
 
 	#if there are children, map children
 	if($primaryFolderArr){
